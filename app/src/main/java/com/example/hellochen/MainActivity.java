@@ -17,19 +17,20 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnEditTextView;
     private Button mBtnRadioButtonView;
     private Button mBtnCheckBoxView;
+    private Button mBtnImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        获取按键id
-        mBtnTextView = findViewById(R.id.textView);
-        mBtnButtonView = findViewById(R.id.buttonView);
-        mBtnEditTextView = findViewById(R.id.editTextView);
-        mBtnRadioButtonView = findViewById(R.id.radioButtonView);
-        mBtnCheckBoxView = findViewById(R.id.checkBoxView);
-
+//        获取按键id 强制转换为button类型
+        mBtnTextView = (Button) findViewById(R.id.textView);
+        mBtnButtonView = (Button) findViewById(R.id.buttonView);
+        mBtnEditTextView = (Button) findViewById(R.id.editTextView);
+        mBtnRadioButtonView = (Button) findViewById(R.id.radioButtonView);
+        mBtnCheckBoxView = (Button) findViewById(R.id.checkBoxView);
+        mBtnImageView = (Button) findViewById(R.id.imageView);
         setListeners();
     }
 
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnEditTextView.setOnClickListener(onClick);
         mBtnRadioButtonView.setOnClickListener(onClick);
         mBtnCheckBoxView.setOnClickListener(onClick);
+        mBtnImageView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -64,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.checkBoxView:
                     intent = new Intent(MainActivity.this, CheckBoxActivity.class);
+                    break;
+                case R.id.imageView:
+                    intent = new Intent(MainActivity.this, ImageViewActivity.class);
                     break;
                 default:
                     break;

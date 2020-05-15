@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckBoxActivity">
+    android:orientation="vertical"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textSize="25sp"
+        android:textColor="#f0f005"
+        android:layout_gravity="center"/>
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A. CheckBox"
+        android:textSize="15sp"
+        android:textColor="#f54555"
+        android:paddingLeft="10dp"
+        android:button="@drawable/checkbox"/>
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B. CheckBox"
+        android:textSize="15sp"
+        android:textColor="#f54ff5"
+        android:paddingLeft="10dp"
+        android:button="@drawable/checkbox"/>
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C. CheckBox"
+        android:textSize="15sp"
+        android:textColor="#f54f55"
+        android:paddingLeft="10dp"
+        android:button="@drawable/checkbox"/>
+
+    <CheckBox
+        android:id="@+id/cb_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D. CheckBox"
+        android:textSize="15sp"
+        android:textColor="#f54855"
+        android:paddingLeft="10dp"
+        android:button="@drawable/checkbox" />
+</LinearLayout>
