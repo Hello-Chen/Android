@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.hellochen.Listview.ListViewActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRadioButtonView;
     private Button mBtnCheckBoxView;
     private Button mBtnImageView;
+    private Button mBtnListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButtonView = (Button) findViewById(R.id.radioButtonView);
         mBtnCheckBoxView = (Button) findViewById(R.id.checkBoxView);
         mBtnImageView = (Button) findViewById(R.id.imageView);
+        mBtnListView = (Button) findViewById(R.id.listView);
         setListeners();
     }
 
@@ -43,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButtonView.setOnClickListener(onClick);
         mBtnCheckBoxView.setOnClickListener(onClick);
         mBtnImageView.setOnClickListener(onClick);
+        mBtnListView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -70,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.imageView:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
                     break;
+                case R.id.listView:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                 default:
                     break;
             }

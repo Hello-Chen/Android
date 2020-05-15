@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hellochen">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/qipao"
@@ -9,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".ImageViewActivity"></activity>
-        <activity android:name=".splashActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +24,8 @@
         <activity android:name=".TextActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".ImageViewActivity"/>
+        <activity android:name=".Listview.ListViewActivity"/>
     </application>
 
 </manifest>

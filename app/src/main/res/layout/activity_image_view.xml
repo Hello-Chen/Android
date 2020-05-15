@@ -43,4 +43,20 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/hax"
         android:layout_toRightOf="@+id/hay"/>
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/hax"
+        android:background="#0ff"
+        android:src="@mipmap/bg"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/iv_1"
+        android:scaleType="fitCenter"/>
+
 </RelativeLayout>
